@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sweet Web Boilerplate</title>
     <link rel="stylesheet" href="stylesheets/style.min.css">
 </head>
+
 <body>
+    <section class="home">
+        <div class="head">
+            <img src="./assets/images/hamburger.svg" alt="Bugershop logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menus</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="body">
+            <div class="text">
+                <h1>Lorem ipsum dolor sit <span>amet</span></h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam soluta
+                    neque enim omnis error in laudantium corporis. Placeat dolore
+                    voluptatibus tempore tenetur fuga autem illo vero eaque,
+                    necessitatibus dignissimos porro.
+                </p>
+            </div>
+            <div class="image-area">
+                <img id="main-img" src="./assets/images/burger1.png" alt="Burger image">
+            </div>
+        </div>
+        <div class="circle"></div>
+        <div class="slide-control">
+            <ul>
+                <li onclick="changeColor('red'); changeImage('burger1.png');"><img src="./assets/images/burger1.png"
+                        alt="Burger image"></li>
+                <li onclick="changeColor('orange'); changeImage('burger2.png');"><img src="./assets/images/burger2.png"
+                        alt="Burger image"></li>
+                <li onclick="changeColor('yellow'); changeImage('burger3.png');"><img src="./assets/images/burger3.png"
+                        alt="Burger image"></li>
+            </ul>
+        </div>
+    </section>
     <script src="javascripts/app.min.js"></script>
 </body>
+
 </html>
